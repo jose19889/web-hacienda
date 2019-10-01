@@ -1,0 +1,247 @@
+
+/* =================================================================== */
+/* MAIN NAV
+====================================================================== */
+
+
+.navbar-nav ul
+{
+    width:100%;
+    min-width:187px!important;
+    padding:0;
+}
+.navbar-nav > li > ul.dropdown-menu
+{
+    *top:60px!important;
+}
+.navbar-toggle{
+    background:#303436;
+    border:none;
+    padding:10px 10px;
+    border-radius:3px;
+    margin-top:5px;
+}
+.navbar-light .navbar-toggle:hover, .navbar-light .navbar-toggle:focus{
+    background:#303436;
+}
+.navbar-light .navbar-toggle .icon-bar{
+    background-color:#fff;
+    height:3px;
+}
+.navbar{
+    margin-bottom: 0;
+    *background:#323A45;
+	*background:#0C2E5C;
+    min-height:35px;
+    border:none;
+    *border-top:7px solid #26C9FF !important;
+    /*position: relative;*/
+}
+
+
+.navbar-nav > li ul > li:first-child
+{
+    *border-top:2px solid #00838F;
+}
+
+.navbar-nav .dropdown-menu > li > a {
+    white-space:normal;
+    font-size: 13px;
+    padding:12px 20px;
+    border-bottom:1px solid #e4e4e4;
+}
+.navbar-nav .dropdown-menu > li > a:hover
+{
+    color:#44474E;
+}
+.navbar-nav ul.sm-nowrap > li > a {
+    white-space:nowrap;
+}
+/* The following will make the sub menus collapsible for small screen devices (it's not recommended editing these) */
+.navbar-nav .collapsible ul {display:none;position:static !important;top:auto !important;left:auto !important;margin-left:0 !important;margin-top:0 !important;width:auto !important;min-width:0 !important;max-width:none !important;}
+.navbar-nav .collapsible ul.sm-nowrap > li > a {white-space:normal;}
+.navbar-nav .collapsible iframe{display:none;}
+/* disable Bootstrap 3's global box-sizing:border-box; for the menus as it doesn't play nice with SmartMenus */
+ul.sm li *,ul.sm li *:before,ul.sm li *:after{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus
+{
+    border-color:transparent!important;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus{
+    background-color:#fff ;
+}
+
+
+
+/*--------Animation_Hover_Effect_CSS---------------*/
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+/*------------Hover_Effect_CSS------------*/
+.navbar-light .navbar-nav > li > a {
+    *overflow: hidden;
+    *height: 22px;
+    line-height: 22px;
+    *padding: 14px 14px;
+    color: #004d6b !important;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav > li > a:hover {
+    
+    color:#28c7f2!important;
+	font-weight:400;
+
+}
+
+.navbar-light .navbar-nav > li > a > span.data-hover{
+    position: relative;
+    display: inline-block;
+    height: 3em;
+    color: #fff;
+    margin: -12px -29px;
+    padding: 11px 30px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.navbar-light .navbar-nav > li > a > span.data-hover::before {
+    position: absolute;
+    color: #fff;
+    right:100%;
+    margin: -62px 6px;
+    padding: 62px 24px;
+    content: attr(data-hover);
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition:all 0.3s ease-in-out 0s;
+    _webkit-transition:all 0.3s ease-in-out 0s;
+    _moz-transition:all 0.3s ease-in-out 0s;
+}
+.navbar-light .navbar-nav > li:hover > a > span.data-hover,
+.navbar-light .navbar-nav > li:focus > a > span.data-hover{
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    transform: translateX(100%);
+    transition:all 0.3s ease-in-out 0s;
+    _webkit-transition:all 0.3s ease-in-out 0s;
+    _moz-transition:all 0.3s ease-in-out 0s;
+}
+
+
+/*===========================================================
+# Header
+=============================================================*/
+.logo {padding: 25px 0px 25px;}
+  /* -------Menu ---------- */
+ /* .navbar {
+    border-radius: 0px!important;
+  }
+  .navbar {
+    background-color: #1d89c3;
+  }   
+  .navbar .btn-group .dropdown-menu a:hover {
+    color: #000 !important;
+  }
+
+  .navbar .btn-group .dropdown-menu a:active {
+    color: #fff !important;
+  }  
+  .navbar-inverse .navbar-nav > li > a {
+    color: #ffffff!important;
+}
+*/
+/* subnenu walker*/
+
+/*menu test dropdown*/
+/*Dropdown Css*/
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+    position: absolute;
+	z-index:999;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    *border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.dropdown-menu {
+
+    padding: inherit !important;
+ 
+}

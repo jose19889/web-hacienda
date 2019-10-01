@@ -1,0 +1,129 @@
+/*
+ * Theme Name: Jayj "Download" post type
+ * Theme URI: http://jayj.dk/2011/download-cpt-wordpress/
+ * Description: TwentyEleven child theme with a custom "download" post type from tutorial on http://jayj.dk
+ * Author: Jesper Johansen
+ * Author URI: http://jayj.dk
+ * Version: 1.1
+ * Template: twentyeleven
+ *
+ * Change the 'twentyeleven' if you are using another parent theme
+ */
+
+@import url( '../twentyeleven/style.css' ); /* Import CSS from Twenty Eleven */
+
+/**
+ * A bit CSS for the archive pages
+ * Customize to fit to your theme
+ */
+
+.jayj_download .sep {
+	padding: 0 4px;
+}
+
+.jayj_download .wp-post-image {
+	float: right;
+}
+
+.jayj_download .download-description {
+	padding: 1em 0;
+}
+
+.jayj_download .download-btn {
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	background: linear-gradient(#f9f9f9, #e5e5e5);
+	border-radius: 3px;
+	color: #373737;
+	display: inline-block;
+	font-size: 16px;
+	padding: 9px 12px;
+}
+
+.jayj_download .download-count {
+	margin-left: 20px;
+}
+
+/* Single downloads */
+.single-download {
+	background: #f7f7f7;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin: 0 0 1.625em;
+	padding: 1.625em;
+	position: relative;
+	text-align: center;
+}
+
+.single-download .wp-post-image {
+
+}
+
+.single-download .download-text {
+	margin: 1em 0;
+}
+
+.single-download .download-link {
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #ececec);
+	background: -o-linear-gradient(#f9f9f9, #ececec);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#ececec));
+	background: -webkit-linear-gradient(#f9f9f9, #ececec);
+	background: linear-gradient(#f9f9f9, #ececec);
+	border: 1px solid #dedddd;
+	border-radius: 3px;
+	color: #373737;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 12px;
+	text-shadow: 1px 1px 0px #fff;
+	-webkit-box-shadow: 1px 1px 0px #fff;
+	box-shadow: 1px 1px 0px #fff;
+}
+
+.single-download .download-link:hover {
+	background: #f0f0f0; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5));
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	background: linear-gradient(#f9f9f9, #e5e5e5);
+	text-decoration: none;
+}
+
+.single-download .download-link:active {
+	background: -webkit-linear-gradient(#e5e5e5, #f0f0f0);
+}
+
+.single-download .download-count {
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+/* Popular and Latest Downloads widget */
+.widget_jayj_popular_downloads ol,
+.widget_jayj_latest_downloads ol  {
+	list-style: square;
+	margin: 5px 0 0;
+}
+
+.widget_jayj_popular_downloads .widget-entry-title,
+.widget_jayj_latest_downloads .widget-entry-title {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0;
+}
+
+.widget_jayj_popular_downloads .download-count,
+.widget_jayj_latest_downloads .download-count {
+	color: #666;
+	display: block;
+	font-size: 10px;
+	font-weight: 500;
+	line-height: 2.76333em;
+	text-transform: uppercase;
+}

@@ -1,0 +1,16 @@
+
+
+# BEGIN WordPress
+RewriteEngine on
+RewriteBase /
+
+# Rewrites all URLS without landing-page in them
+RewriteCond %{REQUEST_URI} !^/1.2/
+
+# Rewrites all URLS [Replace "example" with the actual domain, without the TLD (.com, .net, .biz, etc)]
+RewriteCond %{HTTP_HOST} ^(www\.)?hacienda\.
+
+# Rewrite all those to insert /folder
+RewriteRule ^(.*)$ /1.2/$1 [L]
+
+# END WordPress
